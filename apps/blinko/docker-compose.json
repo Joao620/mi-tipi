@@ -22,7 +22,7 @@
         }
       },
       "dependsOn": {
-        "postgres": {
+        "blinko-postgres": {
           "condition": "service_healthy"
         }
       }
