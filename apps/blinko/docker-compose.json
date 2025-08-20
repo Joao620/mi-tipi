@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "blinko-website",
-      "image": "blinkospace/blinko:ss1.3.1",
+      "image": "blinkospace/blinko@sha256:5f41fe4ff2e4030495b3a18a0a1a1722fe4c6544b2cbd6b4fae741f47c780e8c",
       "pull_policy": "missing",
       "environment": {
         "DATABASE_URL": "postgresql://postgres:${DB_ROOT_PASSWORD}@blinko-postgres:5432/postgres",
