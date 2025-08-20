@@ -9,7 +9,7 @@
       },
       "internalPort": 1111,
       "healthCheck": {
-        "test": "curl -f http://blinko-website:1111/",
+        "test": "curl -f ${NEXT_PUBLIC_BASE_URL}/",
         "interval": "30s",
         "timeout": "10s",
         "retries": 5,
