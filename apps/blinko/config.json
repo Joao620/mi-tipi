@@ -1,0 +1,59 @@
+{
+  "name": "Blinko",
+  "id": "blinko",
+  "available": true,
+  "short_desc": "Blinko is an innovative open-source project designed for individuals who want to quickly capture and organize their fleeting thoughts. Blinko allows users to seamlessly jot down ideas the moment they strike, ensuring that no spark of creativity is lost.",
+  "author": "blinkospace",
+  "port": 1111,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Blinko is an innovative open-source project designed for individuals who want to quickly capture and organize their fleeting thoughts. Blinko allows users to seamlessly jot down ideas the moment they strike, ensuring that no spark of creativity is lost.",
+  "tipi_version": 1,
+  "version": "v1.3.1",
+  "source": "https://github.com/blinkospace/blinko",
+  "website": "https://blinko.mintlify.app",
+  "exposable": true,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1755697637544,
+  "updated_at": 1755697637544,
+  "dynamic_config": true,
+  "form_fields": [
+    {
+      "type": "text",
+      "label": "Node Environment",
+      "default": "production",
+      "required": true,
+      "env_variable": "NODE_ENV"
+    },
+    {
+      "type": "text",
+      "label": "NextAuth URL",
+      "default": "http://localhost:1111",
+      "required": true,
+      "env_variable": "NEXTAUTH_URL"
+    },
+    {
+      "type": "text",
+      "label": "Public Base URL",
+      "default": "http://localhost:1111",
+      "required": true,
+      "env_variable": "NEXT_PUBLIC_BASE_URL"
+    },
+    {
+      "type": "random",
+      "label": "NextAuth Secret",
+      "min": 32,
+      "env_variable": "NEXTAUTH_SECRET"
+    },
+    {
+      "type": "random",
+      "label": "Database Root Password",
+      "min": 32,
+      "env_variable": "DB_ROOT_PASSWORD"
+    }
+  ]
+}
