@@ -3,6 +3,7 @@
     {
       "name": "blinko-website",
       "image": "blinkospace/blinko:latest",
+      "pull_policy": "missing",
       "environment": {
         "DATABASE_URL": "postgresql://postgres:${DB_ROOT_PASSWORD}@blinko-postgres:5432/postgres"
       },
@@ -30,6 +31,7 @@
     {
       "name": "blinko-postgres",
       "image": "postgres:14",
+      "pull_policy": "missing",
       "environment": {
         "POSTGRES_DB": "postgres",
         "POSTGRES_USER": "postgres",
